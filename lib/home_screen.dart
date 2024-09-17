@@ -24,8 +24,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   TextEditingController dateController = TextEditingController();
 
-  var weightGain = '2kg';
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -101,13 +99,36 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
 
                       SizedBox(height: 30,),
-                      Text(
-                        "You've gained $weightGain in a month, keep it up!",
-                        style: TextStyle(
-                          color: Colors.white70,
-                          fontWeight: FontWeight.w600,
-                          fontSize: 15,
-                        ),
+
+                      RichText(
+                        text: TextSpan(
+                          text: 'You\'ve gained ',
+                          style: TextStyle(
+                            color: Colors.white70,
+                            fontWeight: FontWeight.w600,
+                            fontSize: 15,
+                          ),
+                          children: <TextSpan>[
+                            TextSpan(
+                              text: '2kg',
+                              style: TextStyle(
+                                color: Colors.white70,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 20,
+                              ),
+                            ),
+
+                            TextSpan(
+                              text: ' in a month. Keep it up!',
+                              style: TextStyle(
+                                color: Colors.white70,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 15,
+                              ),
+                            ),
+
+                          ]
+                        )
                       ),
 
                       SizedBox(height: 5,),
