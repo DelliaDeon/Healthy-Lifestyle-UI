@@ -1,6 +1,15 @@
 # healthy_life
 
-A new Flutter project.
+The frontend of a flutter app. This project consists of two screens. The project is an app primarily for living a healthy lifestyle. 
+Features: 
+1. It shows weight gained or weight loss, and the amount left to reach your goal
+2. It shows a user's daily target of water, calories, weight, bpm.
+3. It has a slideshow containing motivational words with images.
+4. It show's a user's meal, the amount of calories each one contains, and the sum of the calories. It also includes time range of the meal
+
+The app's theme consists of the colors black, white, and green.
+
+
 
 ## Getting Started
 
